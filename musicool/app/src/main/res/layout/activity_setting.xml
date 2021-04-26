@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    tools:context=".SettingActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/backToProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/pink_light"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:onClick="backToProfile"
+                android:font="@font/aovel"
+                android:text="Back to Profile"
+                android:layout_marginRight="50dp"/>
+
+            <Button
+                android:id="@+id/UpdateName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="10dp"
+                android:text="Update Name"
+                android:textSize="50px"
+                android:onClick="updateName"
+                android:font="@font/aovel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/grey" />
+
+            <ImageView
+                android:id="@+id/changeProfilePhoto"
+                android:layout_width="152dp"
+                android:layout_height="118dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:gravity="center_horizontal"
+                android:src="@drawable/samplephoto" />
+
+            <Button
+                android:id="@+id/changeAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:layout_gravity="center_horizontal"
+                android:text="Change Age"
+                android:onClick="updateAge"
+                android:textAllCaps="false"
+                android:font="@font/aovel"
+                android:textColor="@color/white"
+                android:textSize="40px" />
+
+            <Button
+                android:id="@+id/changeSlogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:layout_gravity="center_horizontal"
+                android:text="Reset Slogan"
+                android:font="@font/confessionregular"
+                android:onClick="updateSlogan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="40px" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        android:background="@color/blue_deep"-->
+<!--        app:itemBackground="@color/blue_deep"-->
+<!--        app:labelVisibilityMode="labeled"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:itemIconTint="@drawable/selector"-->
+<!--        app:itemTextColor="@drawable/selector"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:menu="@menu/nav_menu"  />-->
+</RelativeLayout>

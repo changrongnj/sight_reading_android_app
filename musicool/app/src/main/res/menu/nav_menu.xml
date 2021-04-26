@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/ic_grading"
+        android:icon="@drawable/ic_grading"
+        android:title="Score" />
+
+    <item
+        android:id="@+id/ic_groups"
+        android:icon="@drawable/ic_groups"
+        android:title="Peer" />
+
+    <item
+        android:id="@+id/ic_face"
+        android:icon="@drawable/ic_face"
+        android:title="Profile" />
+
+<!--    <item-->
+<!--        android:id="@+id/ic_settings"-->
+<!--        android:icon="@drawable/ic_settings"-->
+<!--        android:title="Settings" />-->
+
+
+</menu>

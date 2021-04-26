@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PeerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/blue"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="center"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:onClick="nearby"
+                android:textAllCaps="false"
+                android:text="Who's Nearby" />
+
+            <Button
+                android:id="@+id/ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/blue"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:onClick="rankingBoard"
+                android:textAllCaps="false"
+                android:text="Ranking Board" />
+
+        </LinearLayout>
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@color/blue_deep"
+                    android:layout_gravity="center"
+                    android:layout_weight = "1"
+                    android:textAlignment="center"
+                    app:strokeColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue_deep"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/slogan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@color/grey_light"
+                    app:strokeColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_weight = "1"
+                    android:textColor="@color/blue_deep"
+                    android:textSize="20dp"
+                    android:textAllCaps="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/u1"
+                android:textSize="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:padding="3dip" />
+
+            <TextView
+                android:id="@+id/s1"
+                android:textSize="20dp"
+                android:layout_weight = "1"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="3dip" />
+
+            </TableRow>
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight = "1"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+
+                <TextView
+                    android:id="@+id/s2"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_weight = "1"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u3"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s3"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u4"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s4"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u5"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s5"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u6"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s6"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u7"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s7"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u8"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight = "1"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s8"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u9"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s9"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/u10"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s10"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u11"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s11"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u12"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s12"
+                    android:layout_weight = "1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u13"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s13"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u14"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s14"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u15"
+                    android:layout_weight = "1"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s15"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u16"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s16"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u17"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s17"
+                    android:layout_weight = "1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u18"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s18"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u19"
+                    android:textAlignment="center"
+                    android:layout_weight = "1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s19"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+
+            <TableRow android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/u20"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_weight = "1"
+                    android:layout_marginEnd="20dp"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+                <TextView
+                    android:id="@+id/s20"
+                    android:textSize="20dp"
+                    android:layout_weight = "1"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:padding="3dip" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_deep"
+        app:itemBackground="@color/blue_deep"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginTop="10dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_menu"  />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "567767224093",
+    "project_id": "musicool-ebdfa",
+    "storage_bucket": "musicool-ebdfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567767224093:android:d483eb9d3ac08d48639bf4",
+        "android_client_info": {
+          "package_name": "edu.neu.madcourse.musicool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567767224093-gopj4seto9lo1gpdbd3i2avkh7kt0epm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACfu1AhIIwubrj8r_DCwd30pifwDyTAAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567767224093-gopj4seto9lo1gpdbd3i2avkh7kt0epm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

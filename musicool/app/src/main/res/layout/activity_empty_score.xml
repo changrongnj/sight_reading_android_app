@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Empty_scoreActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="Daily Progress"
+            android:textColor="@color/blue_deep"
+            android:fontFamily="@font/roughencorner"
+            android:textStyle="bold"
+            android:textSize="90px" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Sign in to check your progress 👆"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/purple_light"
+            android:onClick="goToLogin"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/progressMetric"
+            android:layout_width="306dp"
+            android:layout_height="269dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/progressmetric" />
+
+        <ImageView
+            android:id="@+id/progressPic"
+            android:layout_width="211dp"
+            android:layout_height="151dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:gravity="center_horizontal"
+            android:src="@drawable/progress" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:background="@color/blue_deep"
+        app:itemBackground="@color/blue_deep"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginTop="10dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_menu"  />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
